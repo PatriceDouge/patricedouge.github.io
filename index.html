@@ -97,21 +97,38 @@
     </div>
   </div>
 </div>
-
+<hr> </hr>
 <!-- PROJECTS -->
 
 <div id="projects" class="projects">
   <div class="container">
     <h1>Projects</h1>
+    <img class="wow fadeInRight" data-wow-delay="1.4s" src="images/website1.jpg" alt="Image 1" />
+    <img class="wow fadeInRight" data-wow-delay="1.8s" src="images/app.jpg" alt="Image 2" />
+    <img class="wow fadeInRight" data-wow-delay="0.8s" src="images/website3.jpg" alt="Image 3" />
+    <input type="button" class="btn btn-primary" value="See projects on Github" onclick=" relocate_home()">
   </div>
 </div>
 
 
+
 <!-- EDUCATION -->
 
-<div id="education" class="education">
+<div id="education" class="education wow fadeIn">
   <div class="container">
   <h1>Education</h1>
+  <img src="images/uofr.jpg" alt="">
+  <p>Univeristy of Rochester Class of 2019</p>
+  <p>Candidate for B.A in Computer Science</p>
+  <h4>Related Coursework:</h4>
+  <ul>
+    <li>CSC 170 Front-End Web Dev and Design (HTML, CSS, JS)</li>
+    <li>CSC 171: Intro to Programming(Java)</li>
+    <li>CSC 172: Data Structures and Algorithms(Java, C)</li>
+    <li>CSC 173: Computation and Formal Systems (C, SQL</li>
+    <li>CSC 210: Web Programming (JavaScript, MongoDB, Express.js, AngularJS, Node.js)</li>
+    <li>CSC 214 Mobile App Development (Swift)</li>
+  </ul>
   </div>
 </div>
 
@@ -120,7 +137,7 @@
 <div id="contact" class="contact">
     <div class="container">
         <div class="row">
-            <h2 class="wow fadeInUp">Contact</h2>
+            <h1 class="wow fadeInUp">Contact</h1>
             <p class="wow fadeInUp" data-wow-delay="0.4">Lorem Ipsum passages, and more recently with desktop publishing software</p>
             <div class="col-lg-6 col-md-6">
                 <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
@@ -199,11 +216,23 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("#projects").waterwheelCarousel({
+      // include options like this:
+      // (use quotes only for string values, and no trailing comma after last option)
+      // option: value,
+      // option: value
+      });
+    });
+    </script>
     <script>
       new WOW().init();
     </script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
     <script>
             $(document).ready(function(){
                $("#headerNav").click(function(){
@@ -228,5 +257,11 @@
                });
             });
         </script>
+        <script>
+      function relocate_home()
+      {
+           location.href = "https://github.com/PatriceDouge";
+      }
+      </script>
   </body>
 </html>
