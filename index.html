@@ -15,48 +15,18 @@
   </head>
   <body>
 
-
-    <!-- NAVIGATION -->
-
-    <!-- <div id="myNavBar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-
-      <div class="container">
-
-        <div class="navbar-header">
-
-          <button type="button" class="navbar-toggle" data-toggle="collaspe" data-target=".navbar-collaspe">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-
-          <a href="#" class="navbar-brand">Patrice Douge</a>
-
-        </div>
-
-        <div class="navbar-collaspe collaspe">
-          <ul class="nav navbar-nav navbar-right">
-            <li> <a href="#header" id="headerNav">Home</a></li>
-            <li> <a href="#skills" id="skillsNav">Skills</a></li>
-            <li> <a href="#projects" id="projectsNav">projects</a></li>
-            <li> <a href="#education" id="educationNav">education</a></li>
-            <li> <a href="#contact" id="contactNav">Contact</a></li>
-          </ul>
-        </div>
-
-        </div>
-
-        </div>
-
-      </div>
-
-    </div> -->
-
 <!-- HEADER -->
 
 <div id="header" class="header">
+  <!-- <img src="images/pd_logo.jpg" alt=""> -->
+  <h1>Hi, I'm Patrice. <span class="typed"></span></h1>
+  <!-- <h1 id="typed"></h1> -->
 
-  <h1 id="typed"></h1>
+  <div class="contact-btn">
+    <a href="#contact" id="contactNav">
+      <button type="button">Contact Me</button>
+    </a>
+  </div>
 
   <div class="page-scroll">
     <a href="#skills" id="skillsNav">
@@ -101,14 +71,15 @@
     </div>
   </div>
 </div>
+
 <hr> </hr>
+
 <!-- PROJECTS -->
 
 <div id="projects" class="projects">
   <div class="container">
-    <h1>Projects</h1>
-    <img class="wow fadeInRight" data-wow-delay="1.4s" src="images/website1.jpg" alt="Image 1" />
-    <input type="button" class="btn btn-primary" value="See projects on Github" onclick=" relocate_home()">
+    <h1>My lastest work</h1>
+    <input type="button" class="btn btn-info" value="See projects on Github" onclick=" relocate_home()">
   </div>
 </div>
 
@@ -116,22 +87,8 @@
 
 <!-- EDUCATION -->
 
-<div id="education" class="education wow fadeIn">
-  <div class="container">
-  <h1>Education</h1>
-  <img src="images/uofr.jpg" alt="">
-  <p>Univeristy of Rochester Class of 2019</p>
-  <p>Candidate for B.A in Computer Science</p>
-  <h4>Related Coursework:</h4>
-  <ul>
-    <li>CSC 170 Front-End Web Dev and Design (HTML, CSS, JS)</li>
-    <li>CSC 171: Intro to Programming(Java)</li>
-    <li>CSC 172: Data Structures and Algorithms(Java, C)</li>
-    <li>CSC 173: Computation and Formal Systems (C, SQL</li>
-    <li>CSC 210: Web Programming (JavaScript, MongoDB, Express.js, AngularJS, Node.js)</li>
-    <li>CSC 214 Mobile App Development (Swift)</li>
-  </ul>
-  </div>
+<div id="education" class="education">
+
 </div>
 
 <!-- CONTACT -->
@@ -186,8 +143,6 @@
              </div>
              <div class="col-lg-4 col-md-6">
                  <h4>Stay in touch</h4>
-                 <i class="social fa fa-facebook" aria-hidden="true"></i>
-                 <i class="social fa fa-twitter" aria-hidden="true"></i>
                 <i class="social fa fa-linkedin" aria-hidden="true"></i>
                 <i class="social fa fa-github" aria-hidden="true"></i><br>
              </div>
@@ -196,51 +151,26 @@
  </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/wow.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waterwheelCarousel.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-      $("#projects").waterwheelCarousel({
-      // include options like this:
-      // (use quotes only for string values, and no trailing comma after last option)
-      // option: value,
-      // option: value
-      });
-    });
-    </script>
     <script>
       new WOW().init();
     </script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-1.10.2.min.js"></script>
-    <script src="typed.js-master/lib/typed.min.js"></script>
+    <script src="js/typed.min.js"></script>
     <script type="text/javascript">
-      var typed = new Typed('#typed', {
-      strings: ["Hi, I'm Patrice. I'm a Software Engineer."],
-      typeSpeed: 100
+      var typed = new Typed('.typed', {
+      strings: ["I'm a Developer.", "I develop web applications.",
+                "I develop mobile applications.", "I develop software."],
+      typeSpeed: 100,
+      backSpeed: 50,
+      loop: true,
+  		loopCount: 5,
+  		showCursor: true,
       });
     </script>
     <script>

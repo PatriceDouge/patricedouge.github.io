@@ -111,13 +111,36 @@ hr {
 }
 
 .header .page-scroll {
-  margin-top: 10px;
   font-size: 20px;
   font-family: 'PT Sans Narrow', Arial, sans-serif;
 }
 
 .header a {
   color: #fff !important;
+}
+
+.header .contact-btn button {
+
+      padding: 0 30px;
+      color: #fff;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 38px;
+      letter-spacing: .1rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      white-space: nowrap;
+      background-color: transparent;
+      border-radius: 4px;
+      border: 1px solid #00FFFF;
+      cursor: pointer;
+      position: absolute;
+      top: 430px;
+      left: 650px;
+      /* top: -300px;
+      left: -10px; */
+
 }
 
 @media(max-width:768px) {
@@ -183,7 +206,8 @@ hr {
     font-size: 30px;
     padding: 25px 20px;
     border-radius: 50%;
-    background-color: #6699cc;
+    background-color: #99ffff;
+    /* background-color: #6699cc; */
     color: #fff;
 }
 
@@ -231,34 +255,19 @@ hr {
  /* EDUCATION */
 
 .education {
-  padding: 50px 0 80px;
-  height: 750px;
+  height: 800px;
   width: 100%;
-  background-color: #F5F5F5;
-  font-family: 'PT Sans Narrow', Arial, sans-serif;
-  text-align: center;
+  padding: 30px 0 30px;
+  background-color: #2b2c30;
 }
 
- .education img {
-   height: 150px;
-   width: 150px;
-   border-radius: 50%;
- }
-
- .education h4 {
-   font-weight: : bold;
- }
-
- .education ul {
-   list-style-position: inside;
- }
 
 
 /* CONTACT */
 
 .contact {
 
-    padding: 50px 0 80px;
+    padding: 80px 0 80px;
     text-align: center;
 }
 
