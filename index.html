@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="plugin/css/mediaBoxes.css">
   </head>
   <body>
 
@@ -29,7 +28,75 @@
     </a>
   </div>
 
+  <div class="page-scroll">
+    <a href="#skills" id="skillsNav">
+      Learn more about what I do
+      <br>
+      <i class="fa fa-chevron-down"></i>
+    </a>
+  </div>
+
 </div>
+
+
+
+<!-- SKILLS -->
+
+<div id="skills" class="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <p>Describe what this section is.</p>
+    <div class="row">
+      <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.8s">
+        <i class="fa fa-desktop" aria-hidden="true"></i>
+        <h4>Web Design and Development</h4>
+        <p>Describe your web design and development skills.</p>
+      </div>
+      <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="1.4s">
+        <i class="fa fa-server" aria-hidden="true"></i>
+        <h4>Back-End Web Development</h4>
+        <p>Describe your back-end web development skills.</p>
+      </div>
+      <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.8s">
+        <i class="fa fa-mobile" aria-hidden="true"></i>
+        <h4>Mobile App Development - IOS</h4>
+        <p>Describe your ios skills.</p>
+      </div>
+      <div class="col-lg-3 col-md-3 wow fadeInLeft" data-wow-delay="0.4s">
+        <i class="fa fa-database" aria-hidden="true"></i>
+        <h4>Data Structures</h4>
+        <p>Describe your database structure skills.</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="work" id="work">
+  <div class="container">
+    <div class="row">
+      <h1>My recent work</h1>
+      <h4> Want to see more? Visit my github <a href="https://github.com/PatriceDouge">here.</a></h4>
+      <div class="col-lg-6 col-md-6" id="left-row">
+          <h2>Amexsa Corp</h2>
+          <h3>Web Developer</h3>
+          <p>Amexsa is an international trading company which specializes in the marketing and distribution of food
+            and beverages worldwide. Currently rebuilding company’s website, using HTML, CSS, Bootstrap.js, jQuery
+            and JavaScript.</p>
+      </div>
+
+      <div class="col-lg-6 col-md-6">
+        <img src="images/mockup.jpg" alt="mockup">
+      </div>
+    </div>
+
+    <!-- <hr> -->
+    <!-- put in recommendation here after done with website -->
+
+  </div>
+</div>
+
 
 <!-- CONTACT -->
 
@@ -37,8 +104,7 @@
     <div class="container">
         <div class="row">
             <h1 class="wow fadeInUp">Contact</h1>
-            <p class="wow fadeInUp" data-wow-delay="0.4">Feel free to contact me if you have any questions
-              or comments aboout my website. </p>
+            <p class="wow fadeInUp" data-wow-delay="0.4">Feel free to contact me if you have any questions or comments aboout my webiste. </p>
             <div class="col-lg-6 col-md-6">
                 <div class="input-group input-group-lg wow fadeInUp" data-wow-delay="0.8s">
                     <span class="input-group-addon" id="sizing-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
@@ -68,9 +134,26 @@
 
 <div id="footer" class="footer">
      <div class="container">
-      <p>Patrice Douge © 2017.</p>
-      <i class="social fa fa-linkedin" aria-hidden="true"></i>
-      <i class="social fa fa-github" aria-hidden="true"></i><br>
+         <div class="row">
+             <div class="col-lg-4 col-md-6">
+               <img src="images/profilePic.jpg" alt="">
+               <p>My name is Patrice Douge, I am currently a junior at
+                 the Univeristy of Rochester, majoring in Computer Science.
+                  My objective is to attain a Software Engineering Internship
+                  for the summer of 2018.</p>
+             </div>
+             <div class="col-lg-4 col-md-6">
+                 <h4 class="wow fadeInUp">Contact Me</h4>
+                 <p><i class="fa fa-envelope" aria-hidden="true"></i> pdouge@u.rochester.edu</p>
+                 <p><i class="fa fa-phone" aria-hidden="true"></i> 404-445-9617</p>
+                 <p><i class="fa fa-globe" aria-hidden="true"></i> www.patricedouge.github.io</p>
+             </div>
+             <div class="col-lg-4 col-md-6">
+                 <h4>Stay in touch</h4>
+                <i class="social fa fa-linkedin" aria-hidden="true"></i>
+                <i class="social fa fa-github" aria-hidden="true"></i><br>
+             </div>
+         </div>
      </div>
  </div>
 
@@ -90,7 +173,7 @@
       var typed = new Typed('.typed', {
       strings: ["Developer."],
       typeSpeed: 100,
-  		showCursor: false,
+  		showCursor: true,
       });
     </script>
     <script>
@@ -104,7 +187,7 @@
                     $('body').animate({scrollTop:$path},1000);
                });
                $("#projectsNav").click(function(){
-                    $path=$("#portfolio-header").offset().top;
+                    $path=$("#projects").offset().top;
                     $('body').animate({scrollTop:$path},1000);
                });
                $("#educationNav").click(function(){
@@ -123,39 +206,5 @@
            location.href = "https://github.com/PatriceDouge";
       }
       </script>
-
-
-      <!-- jQuery 1.8+ -->
-    	<script src="plugin/components/jQuery/jquery-1.11.3.min.js"></script>
-
-      <script src="js/demo.js"></script>
-
-    	<!-- Media Boxes JS files -->
-    	<script src="plugin/components/Isotope/jquery.isotope.min.js"></script>
-    	<script src="plugin/components/imagesLoaded/jquery.imagesLoaded.min.js"></script>
-    	<script src="plugin/components/Transit/jquery.transit.min.js"></script>
-    	<script src="plugin/components/jQuery Easing/jquery.easing.js"></script>
-    	<script src="plugin/components/Waypoints/waypoints.min.js"></script>
-    	<script src="plugin/components/Modernizr/modernizr.custom.min.js"></script>
-    	<script src="plugin/components/Magnific Popup/jquery.magnific-popup.min.js"></script>
-    	<script src="plugin/js/jquery.mediaBoxes.dropdown.js"></script>
-    	<script src="plugin/js/jquery.mediaBoxes.js"></script>
-
-    	<script>
-
-    	    $('#grid').mediaBoxes({
-    	    	filterContainer: '#filter',
-    	    	search: '#search',
-    	    	overlayEffect: 'reveal-bottom',
-    	    	columns: 3,
-    	    	boxesToLoadStart: 6,
-    	    	boxesToLoad: 6,
-    	    	horizontalSpaceBetweenBoxes: 30,
-            	verticalSpaceBetweenBoxes: 30,
-            	popup: 'magnificpopup'
-    	    });
-
-    	</script>
-
   </body>
 </html>
