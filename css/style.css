@@ -143,6 +143,13 @@ hr {
 
 }
 
+.header .contact-btn button:hover {
+
+  background-color: #00FFFF;
+  border: 1px solid #FFFFFF;
+
+}
+
 @media(max-width:768px) {
 
     .header {
