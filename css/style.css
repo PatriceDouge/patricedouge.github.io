@@ -118,7 +118,7 @@ hr {
   padding-top: 300px;
   font-size: 20px;
   font-family: 'PT Sans Narrow', Arial, sans-serif;
-  
+
 }
 
 .header a {
@@ -179,12 +179,16 @@ hr {
 
     .header h1 {
 
-        font-size: 20px;
+        font-size: 50px;
     }
 
     .header p {
 
         font-size: 10px;
+    }
+
+    .header .page-scroll {
+      padding-top: 250px;
     }
 }
 
