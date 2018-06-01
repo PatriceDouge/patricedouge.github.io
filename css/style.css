@@ -1,3 +1,66 @@
+/*** Default Font styles ***/
+h1 {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.2em;font-weight: 700;font-size: 50px;font-style: normal;margin-bottom: 0;text-transform: uppercase;}
+h2 {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.3em;font-weight: 700;font-size: 38px;font-style: normal;margin-bottom: 0;text-transform: uppercase;}
+h3 {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.2em;font-weight: 500;font-size: 30px;font-style: normal;margin-bottom: 0;text-transform: uppercase;}
+h4 {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.2em;font-weight: 500;font-size: 26px;font-style: normal;margin-bottom: 0;}
+p  {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.3em;font-weight: 400;font-size: 18px;font-style: normal;margin-top: 10px;}
+h1, h2, h3, h4, p {-webkit-transition: font-size .5s ease-in-out;-moz-transition: font-size .5s ease-in-out;-o-transition: font-size .5s ease-in-out;transition: font-size .5s ease-in-out;}
+
+/*** Responsive Styles Large Desktop And Above ***/
+@media all and (min-width: 1405px) {
+h1 {line-height: 1.2em;font-size: 60px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 42px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 34px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 30px;margin-bottom: 0;}
+p  {line-height: 1.4em;font-size: 22px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Standard Desktop Only ***/
+@media all and (min-width: 1100px) and (max-width: 1405px) {
+h1 {line-height: 1.2em;font-size: 50px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 38px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 30px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 26px;margin-bottom: 0;}
+p {line-height: 1.3em;font-size: 18px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+h1 {line-height: 1.2em;font-size: 40px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 30px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 26px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 22px;margin-bottom: 0;}
+p {line-height: 1.2em;font-size: 16px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Tablet Only ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+h1 {line-height: 1.2em;font-size: 40px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 30px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 26px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 22px;margin-bottom: 0;}
+p {line-height: 1.4em;font-size: 16px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 767px) {
+h1 {line-height: 1.2em;font-size: 30px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 26px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 22px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 20px;margin-bottom: 0;}
+p {line-height: 1.4em;font-size: 14px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 479px) {
+h1 {line-height: 1.2em;font-size: 30px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 26px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 22px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 20px;margin-bottom: 0;}
+p {line-height: 1.4em;font-size: 14px;margin-top: 10px;}
+}
+
+
 * {
 
     padding: 0;
@@ -6,7 +69,6 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
@@ -21,19 +83,6 @@ a:hover,
 a:active {
 
     text-decoration: none;
-}
-
-h1,
-h2,
-h4 {
-    font-family: 'PT Sans Narrow', Arial, sans-serif;
-    text-transform: uppercase;
-    font-weight: 700;
-}
-
-p {
-    font-size: 15px;
-    line-height: 21px;
 }
 
 hr {
@@ -72,7 +121,6 @@ hr {
 
 .header h1 {
 
-  /* line-height:650px;*/
   vertical-align: middle;
   padding-top: 250px;
   font-size: 70px;
@@ -179,7 +227,6 @@ hr {
 .skills p {
 
     color: #737373;
-    font-size: 14px;
     padding-bottom: 40px;
 }
 
@@ -205,47 +252,52 @@ hr {
     }
 }
 
-/* PROJECTS */
+/* WORK */
 
+.work {
 
+  background-color: #eee;
 
-#projects {
-  padding: 30px;
-   width:800px;
-   height: 800px;
-   display: relative;
- }
-
- #projects h1 {
-   margin-left: 200px;
-   text-align: center;
- }
- #projects img {
-   height: 500px;
-   width: 800px;
-   margin-left: 350px;
-   margin-top: 50px;
-   display: hidden; /* hide images until carousel prepares them */
-   cursor: pointer; /* not needed if you wrap carousel items in links */
- }
-
- #projects input {
-   margin-top: 620px;
-   margin-left: 550px;
- }
-
-
-
-
- /* EDUCATION */
-
-.education {
-  height: 800px;
-  width: 100%;
-  padding: 30px 0 30px;
-  background-color: #2b2c30;
 }
 
+.work h2 {
+
+  text-align: center;
+  padding-top: 60px;
+
+}
+
+.work h3 {
+
+  padding-top: 50px;
+  font-weight: 600;
+
+}
+
+.work h4 {
+
+  text-align: center;
+
+}
+
+.work img {
+
+  width: 600px;
+  height: 400px;
+
+}
+
+.work p {
+
+  width: 450px;
+
+}
+
+.work .left-row {
+
+  padding-top: 30px;
+
+}
 
 
 /* CONTACT */
@@ -298,54 +350,6 @@ hr {
     color: #fff !important;
 }
 
-
-/* WORK */
-
-.work {
-
-  background-color: #eee;
-
-}
-
-.work h1 {
-
-  text-align: center;
-  padding-top: 60px;
-
-}
-
-.work h4 {
-
-  text-align: center;
-  padding-bottom: 30px;
-  font-weight: 100;
-
-}
-
-.work img {
-
-  width: 600px;
-  height: 400px;
-
-}
-
-.work p {
-
-  width: 450px;
-
-}
-
-.work .left-row {
-
-  padding-top: 30px;
-
-}
-
-.work h2 {
-
-  padding-top: 50px;
-
-}
 
 /*FOOTER*/
 
