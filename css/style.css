@@ -85,55 +85,53 @@ a:active {
     text-decoration: none;
 }
 
-hr {
-  margin: 20px 0;
-  border: 1px solid #D3D3D3;
-}
-
-.btn {
-
-    transition: all 300ms ease-in-out;
-    font-weight: 500 !important;
-    text-transform: uppercase;
-}
-
-.btn:hover {
-
-    background-color: #ededed !important;
-    color: #3c3c3c !important;
-    border: 1px solid #fff !important;
-}
-
 /* HEADER */
 
 .header {
 
-    /* height: 100vh; */
+    height: 100vh;
     width: 100%;
     padding: 30px 0 30px;
     text-align: center;
     background-image: url(../images/macBack.jpg);
-    background-image: linear-gradient(90deg, rgba(49, 61, 65, 0.2), rgba(49, 61, 65, 0.2)), url(../images/macBack.jpg);
+    background-image: linear-gradient(90deg, rgba(49, 61, 65, 0.4), rgba(49, 61, 65, 0.4)), url(../images/macBack.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.header .container {
+
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
 .header h1 {
 
-  vertical-align: middle;
-  padding-top: 250px;
-  font-size: 70px;
+  font-size: 80px;
   color: #fff;
-  font-family: 'PT Sans Narrow', Arial, sans-serif;
+
+}
+
+.header h4 {
+
+  color: #fff;
+  font-weight: 500;
 
 }
 
 .header .page-scroll {
 
-  padding-top: 300px;
-  font-size: 20px;
   font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
 
 }
 
@@ -154,15 +152,13 @@ hr {
       text-decoration: none;
       white-space: nowrap;
       background-color: transparent;
-      border-radius: 4px;
+      border-radius: 5px;
       border: 1px solid #00FFFF;
       cursor: pointer;
-      position: relative;
-      /* top: 430px;
-      left: 650px; */
-      /* top: -300px;
-      left: -10px; */
-
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 25px;
 }
 
 .header .contact-btn button:hover {
@@ -172,40 +168,8 @@ hr {
 
 }
 
-@media(max-width:768px) {
-
-    .header {
-
-        padding: 30px;
-        height: 750px;
-    }
-
-    .header img {
-
-        width: 90%;
-        height: 300px;
-        margin: 20px 0 0 20px;
-    }
-
-    .header .btn {
-
-        font-size: 10px;
-        margin-left: 20px;
-    }
-
-    .header h1 {
-
-        font-size: 50px;
-    }
-
-    .header p {
-
-        font-size: 10px;
-    }
-
-    .header .page-scroll {
-      padding-top: 250px;
-    }
+.header .teal-style {
+  color: #00FFFF;
 }
 
 /* SKILLS */
@@ -241,6 +205,36 @@ hr {
     background-color: #99ffff;
     /* background-color: #6699cc; */
     color: #fff;
+}
+
+/*** Responsive Styles Large Desktop And Above ***/
+@media (min-width: 1405px) {
+
+}
+
+/*** Responsive Styles Standard Desktop Only ***/
+@media (min-width: 1100px) and (max-width: 1405px) {
+
+}
+
+/*** Responsive Styles Tablet And Below ***/
+@media (max-width: 980px) {
+
+}
+
+/*** Responsive Styles Tablet Only ***/
+@media (min-width: 768px) and (max-width: 980px) {
+
+}
+
+/*** Responsive Styles Smartphone Only ***/
+@media (max-width: 767px) {
+
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media (max-width: 479px) {
+
 }
 
 
@@ -299,6 +293,13 @@ hr {
 
 }
 
+/*** Responsive Styles Smartphone Portrait ***/
+@media (max-width: 500px) {
+  .work p {width: 370px;}
+  .work img {width: 400px;height: 250px;}
+}
+
+
 
 /* CONTACT */
 
@@ -351,6 +352,7 @@ hr {
 }
 
 
+
 /*FOOTER*/
 
 .footer {
@@ -384,4 +386,67 @@ hr {
 
     padding: 10px 5px 10px;
     margin: -3px 0 0 5px;
+}
+
+/* HAMBURGER MENU */
+
+.icon {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+
+}
+
+.hamburger {
+
+
+  width: 30px;
+  height: 4px;
+  background: #00FFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+
+}
+
+.hamburger:before, .hamburger:after {
+
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #00FFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+
+}
+
+.hamburger:before {
+  top: -10px;
+}
+
+.hamburger:after {
+  top: 10px;
+}
+
+.icon.active .hamburger {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(135deg);
 }
