@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Great vibes font -->
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+    <title>Blog</title>
+
+    <style>
+
+        .title {
+          max-width: 60%;
+          margin: 40px auto;
+        }
+
+        .content {
+          max-width: 50%;
+          margin: 40px auto;
+        }
+
+        .content h4 {
+          font-size: 15px;
+        }
+
+        .content .blog1 {
+          opacity: .7;
+        }
+
+        .content .blog1:hover {
+          opacity: 1;
+        }
+
+        .hr-text {
+          font-size: 70px;
+          line-height: 1em;
+          position: relative;
+          outline: 0;
+          border: 0;
+          color: #000000;
+          text-align: center;
+          height: 1.5em;
+          opacity: .7;
+          font-family: Great Vibes;
+        }
+
+        .hr-text:before {
+          content: '';
+          background: linear-gradient(to right, transparent, #818078, transparent);
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 100%;
+          height: 1px;
+        }
+        .hr-text:after {
+          content: attr(data-content);
+          position: relative;
+          display: inline-block;
+          color: #000000;
+
+          padding: 0 .5em;
+          line-height: 1.5em;
+          background-color: #fcfcfa;
+        }
+
+        .hr-text:hover {
+          opacity: 1;
+        }
+
+    </style>
+
+  </head>
+  <body>
+
+    <div class="title">
+      <hr class="hr-text" data-content="Patrice Dougé">
+    </div>
+
+    <div class="content">
+
+      <div class="blog1">
+        <h4>21 June 2018</h4>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
