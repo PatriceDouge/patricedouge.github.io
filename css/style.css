@@ -1,3 +1,66 @@
+/*** Default Font styles ***/
+h1 {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.2em;font-weight: 700;font-size: 50px;font-style: normal;margin-bottom: 0;text-transform: uppercase;}
+h2 {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.3em;font-weight: 700;font-size: 38px;font-style: normal;margin-bottom: 0;text-transform: uppercase;}
+h3 {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.2em;font-weight: 500;font-size: 30px;font-style: normal;margin-bottom: 0;text-transform: uppercase;}
+h4 {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.2em;font-weight: 500;font-size: 26px;font-style: normal;margin-bottom: 0;}
+p  {font-family: 'PT Sans Narrow', Arial, sans-serif;line-height: 1.3em;font-weight: 400;font-size: 18px;font-style: normal;margin-top: 10px;}
+h1, h2, h3, h4, p {-webkit-transition: font-size .5s ease-in-out;-moz-transition: font-size .5s ease-in-out;-o-transition: font-size .5s ease-in-out;transition: font-size .5s ease-in-out;}
+
+/*** Responsive Styles Large Desktop And Above ***/
+@media all and (min-width: 1405px) {
+h1 {line-height: 1.2em;font-size: 60px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 42px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 34px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 30px;margin-bottom: 0;}
+p  {line-height: 1.4em;font-size: 22px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Standard Desktop Only ***/
+@media all and (min-width: 1100px) and (max-width: 1405px) {
+h1 {line-height: 1.2em;font-size: 50px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 38px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 30px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 26px;margin-bottom: 0;}
+p {line-height: 1.3em;font-size: 18px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Tablet And Below ***/
+@media all and (max-width: 980px) {
+h1 {line-height: 1.2em;font-size: 40px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 30px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 26px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 22px;margin-bottom: 0;}
+p {line-height: 1.2em;font-size: 16px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Tablet Only ***/
+@media all and (min-width: 768px) and (max-width: 980px) {
+h1 {line-height: 1.2em;font-size: 40px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 30px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 26px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 22px;margin-bottom: 0;}
+p {line-height: 1.4em;font-size: 16px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Smartphone Only ***/
+@media all and (max-width: 767px) {
+h1 {line-height: 1.2em;font-size: 30px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 26px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 22px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 20px;margin-bottom: 0;}
+p {line-height: 1.4em;font-size: 14px;margin-top: 10px;}
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media all and (max-width: 479px) {
+h1 {line-height: 1.2em;font-size: 30px;margin-bottom: 0;}
+h2 {line-height: 1.3em;font-size: 26px;margin-bottom: 0;}
+h3 {line-height: 1.2em;font-size: 22px;margin-bottom: 0;}
+h4 {line-height: 1.2em;font-size: 20px;margin-bottom: 0;}
+p {line-height: 1.4em;font-size: 14px;margin-top: 10px;}
+}
+
+
 * {
 
     padding: 0;
@@ -6,7 +69,6 @@
 
 body {
     overflow-x: hidden;
-    font-family: 'Open Sans', sans-serif;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased !important;
 }
@@ -23,6 +85,7 @@ a:active {
     text-decoration: none;
 }
 
+<<<<<<< HEAD
 h1,
 h2,
 h4 {
@@ -88,37 +151,55 @@ hr {
 }
 
 
+=======
+>>>>>>> 9aa8cde0503b305ac5ea7052345c9881e68931f9
 /* HEADER */
 
 .header {
 
-    height: 820px;
+    height: 100vh;
     width: 100%;
     padding: 30px 0 30px;
     text-align: center;
     background-image: url(../images/macBack.jpg);
-    background-image: linear-gradient(90deg, rgba(49, 61, 65, 0.2), rgba(49, 61, 65, 0.2)), url(../images/macBack.jpg);
+    background-image: linear-gradient(90deg, rgba(49, 61, 65, 0.4), rgba(49, 61, 65, 0.4)), url(../images/macBack.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.header .container {
+
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
 .header h1 {
 
-  /* line-height:650px;*/
-  vertical-align: middle;
-  padding-top: 250px;
-  font-size: 70px;
+  font-size: 80px;
   color: #fff;
-  font-family: 'PT Sans Narrow', Arial, sans-serif;
+
+}
+
+.header h4 {
+
+  color: #fff;
+  font-weight: 500;
 
 }
 
 .header .page-scroll {
 
-  padding-top: 300px;
-  font-size: 20px;
   font-family: 'PT Sans Narrow', Arial, sans-serif;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
 
 }
 
@@ -139,15 +220,13 @@ hr {
       text-decoration: none;
       white-space: nowrap;
       background-color: transparent;
-      border-radius: 4px;
+      border-radius: 5px;
       border: 1px solid #00FFFF;
       cursor: pointer;
-      position: relative;
-      /* top: 430px;
-      left: 650px; */
-      /* top: -300px;
-      left: -10px; */
-
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 25px;
 }
 
 .header .contact-btn button:hover {
@@ -157,40 +236,8 @@ hr {
 
 }
 
-@media(max-width:768px) {
-
-    .header {
-
-        padding: 30px;
-        height: 750px;
-    }
-
-    .header img {
-
-        width: 90%;
-        height: 300px;
-        margin: 20px 0 0 20px;
-    }
-
-    .header .btn {
-
-        font-size: 10px;
-        margin-left: 20px;
-    }
-
-    .header h1 {
-
-        font-size: 50px;
-    }
-
-    .header p {
-
-        font-size: 10px;
-    }
-
-    .header .page-scroll {
-      padding-top: 250px;
-    }
+.header .teal-style {
+  color: #00FFFF;
 }
 
 /* SKILLS */
@@ -212,7 +259,6 @@ hr {
 .skills p {
 
     color: #737373;
-    font-size: 14px;
     padding-bottom: 40px;
 }
 
@@ -229,6 +275,36 @@ hr {
     color: #fff;
 }
 
+/*** Responsive Styles Large Desktop And Above ***/
+@media (min-width: 1405px) {
+
+}
+
+/*** Responsive Styles Standard Desktop Only ***/
+@media (min-width: 1100px) and (max-width: 1405px) {
+
+}
+
+/*** Responsive Styles Tablet And Below ***/
+@media (max-width: 980px) {
+
+}
+
+/*** Responsive Styles Tablet Only ***/
+@media (min-width: 768px) and (max-width: 980px) {
+
+}
+
+/*** Responsive Styles Smartphone Only ***/
+@media (max-width: 767px) {
+
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media (max-width: 479px) {
+
+}
+
 
 @media(max-width:768px) {
 
@@ -238,45 +314,57 @@ hr {
     }
 }
 
-/* PROJECTS */
+/* WORK */
 
+.work {
 
+  background-color: #eee;
 
-#projects {
-  padding: 30px;
-   width:800px;
-   height: 800px;
-   display: relative;
- }
+}
 
- #projects h1 {
-   margin-left: 200px;
-   text-align: center;
- }
- #projects img {
-   height: 500px;
-   width: 800px;
-   margin-left: 350px;
-   margin-top: 50px;
-   display: hidden; /* hide images until carousel prepares them */
-   cursor: pointer; /* not needed if you wrap carousel items in links */
- }
+.work h2 {
 
- #projects input {
-   margin-top: 620px;
-   margin-left: 550px;
- }
+  text-align: center;
+  padding-top: 60px;
 
+}
 
+.work h3 {
 
+  padding-top: 50px;
+  font-weight: 600;
 
- /* EDUCATION */
+}
 
-.education {
-  height: 800px;
-  width: 100%;
-  padding: 30px 0 30px;
-  background-color: #2b2c30;
+.work h4 {
+
+  text-align: center;
+
+}
+
+.work img {
+
+  width: 600px;
+  height: 400px;
+
+}
+
+.work p {
+
+  width: 450px;
+
+}
+
+.work .left-row {
+
+  padding-top: 30px;
+
+}
+
+/*** Responsive Styles Smartphone Portrait ***/
+@media (max-width: 500px) {
+  .work p {width: 370px;}
+  .work img {width: 400px;height: 250px;}
 }
 
 
@@ -332,53 +420,6 @@ hr {
 }
 
 
-/* WORK */
-
-.work {
-
-  background-color: #eee;
-
-}
-
-.work h1 {
-
-  text-align: center;
-  padding-top: 60px;
-
-}
-
-.work h4 {
-
-  text-align: center;
-  padding-bottom: 30px;
-  font-weight: 100;
-
-}
-
-.work img {
-
-  width: 600px;
-  height: 400px;
-
-}
-
-.work p {
-
-  width: 450px;
-
-}
-
-.work .left-row {
-
-  padding-top: 30px;
-
-}
-
-.work h2 {
-
-  padding-top: 50px;
-
-}
 
 /*FOOTER*/
 
@@ -413,4 +454,67 @@ hr {
 
     padding: 10px 5px 10px;
     margin: -3px 0 0 5px;
+}
+
+/* HAMBURGER MENU */
+
+.icon {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+
+}
+
+.hamburger {
+
+
+  width: 30px;
+  height: 4px;
+  background: #00FFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+
+}
+
+.hamburger:before, .hamburger:after {
+
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #00FFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+
+}
+
+.hamburger:before {
+  top: -10px;
+}
+
+.hamburger:after {
+  top: 10px;
+}
+
+.icon.active .hamburger {
+  background: rgba(0, 0, 0, 0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon.active .hamburger:before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+  top: 0;
+  transform: rotate(135deg);
 }
